@@ -899,62 +899,70 @@ footer {
     }
 }
 
-/* ==========================================================================
-   14.5. Founder Section Styles (Updated for Larger Image)
-   ========================================================================== */
-.about-founder {
-    padding: 6rem 2rem;
-    background-color: var(--light-cream); 
-    display: flex;
-    justify-content: center;
-}
+<!-- 6.5. Meet Our Founder Section -->
+<section id="founder" class="about-founder">
+    <div class="founder-container">
+        
+        <!-- LEFT COLUMN: Just the Image -->
+        <div class="founder-image-column">
+            <div class="founder-image-wrapper">
+                <img src="logo.png" alt="Erica - Founder of Go Spanish Philippines" class="founder-photo">
+            </div>
+        </div>
+        
+        <!-- RIGHT COLUMN: All the text contents starting from the subtitle -->
+        <div class="founder-content-column">
+            <span class="founder-subtitle">The Vision Behind Go Spanish</span>
+            <h2>Meet Our Founder</h2>
+            
+            <!-- Shorter, impactful Mission Statement -->
+            <p class="founder-story" style="font-weight: 600; color: var(--brand-blue); font-size: 1.1rem; margin-bottom: 0.5rem;">
+                Our Mission: To bridge cultures and open global career opportunities for Filipinos through high-quality, practical, and confidence-building Spanish education.
+            </p>
 
-.founder-container {
-    max-width: 1200px; /* Widened the container to give more space */
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1.1fr 1fr; /* 🚨 Swapped! Makes the photo column wider than the text column */
-    gap: 5rem; /* Increased gap for a more premium, spaced-out feel */
-    align-items: flex-start; /* Aligns both columns nicely at the top */
-}
+            <p class="founder-quote">
+                "¡Hola! I believe that anyone can learn Spanish with the right guidance, consistent practice, and a positive learning environment."
+            </p>
+            
+            <div class="founder-bio-text">
+                <p class="founder-story">
+                    ¡Hola! I'm Erica, The Founder and the Lead Instructor of Go Spanish. I believe that anyone can learn Spanish with the right guidance, consistent practice, and a positive learning environment. My goal is to help you build confidence, communicate naturally, and enjoy every step of your language-learning journey. I also offer complimentary review classes to provide additional speaking practice, reinforce what you’ve learned, and help you prepare for career opportunities where Spanish is an advantage.
+                </p>
+                <p class="founder-story">
+                    Whether you’re starting from zero or looking to improve your skills, I’ll make sure every lesson is interactive, practical, and worthwhile. Let’s achieve your Spanish goals together!
+                </p>
+            </div>
 
-.founder-image-wrapper {
-    width: 100%;
-    border-radius: 20px; /* Slightly softer corners for the larger image */
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); /* Deeper shadow for the bigger element */
-}
-
-.founder-photo {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
-/* Responsive adjustments for tablet and mobile */
-@media (max-width: 992px) {
-    .founder-container {
-        gap: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .about-founder {
-        padding: 4rem 1.5rem;
-    }
-    
-    .founder-container {
-        grid-template-columns: 1fr; /* Stacks vertically on mobile */
-        gap: 3rem;
-        text-align: center;
-    }
-    
-    .founder-image-wrapper {
-        max-width: 450px; /* Allows a larger image footprint on mobile too */
-        margin: 0 auto; 
-    }
-}
+            <!-- Experience List -->
+            <div class="teacher-experience" style="border-top: 1px solid var(--border-color); padding-top: 1.25rem; margin-top: 0.5rem;">
+                <h4 style="font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--brand-blue); margin-bottom: 0.85rem;">Experience</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="position: relative; padding-left: 1.75rem; margin-bottom: 0.85rem; font-size: 0.95rem; line-height: 1.6; color: var(--dark-charcoal);">
+                        <span style="position: absolute; left: 0; top: 1px; color: var(--brand-blue); font-weight: 700;">✓</span>
+                        <strong>Founder & Lead Instructor</strong> at Go Spanish Philippines
+                    </li>
+                    <li style="position: relative; padding-left: 1.75rem; margin-bottom: 0.85rem; font-size: 0.95rem; line-height: 1.6; color: var(--dark-charcoal);">
+                        <span style="position: absolute; left: 0; top: 1px; color: var(--brand-blue); font-weight: 700;">✓</span>
+                        <strong>5+ years</strong> teaching Spanish to Filipino and international students
+                    </li>
+                    <li style="position: relative; padding-left: 1.75rem; margin-bottom: 0.85rem; font-size: 0.95rem; line-height: 1.6; color: var(--dark-charcoal);">
+                        <span style="position: absolute; left: 0; top: 1px; color: var(--brand-blue); font-weight: 700;">✓</span>
+                        <strong>6+ years</strong> of experience as a Spanish Bilingual Professional in multinational companies
+                    </li>
+                    <li style="position: relative; padding-left: 1.75rem; margin-bottom: 0.85rem; font-size: 0.95rem; line-height: 1.6; color: var(--dark-charcoal);">
+                        <span style="position: absolute; left: 0; top: 1px; color: var(--brand-blue); font-weight: 700;">✓</span>
+                        Graduated with a <strong>Bachelor of Science in Office Administration</strong> from Ateneo de Zamboanga University
+                    </li>
+                    <li style="position: relative; padding-left: 1.75rem; margin-bottom: 0.85rem; font-size: 0.95rem; line-height: 1.6; color: var(--dark-charcoal);">
+                        <span style="position: absolute; left: 0; top: 1px; color: var(--brand-blue); font-weight: 700;">✓</span>
+                        Experienced in business, customer service, and conversational Spanish
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
 /* ==========================================================================
    15. Meet Our Teachers Section Styles
