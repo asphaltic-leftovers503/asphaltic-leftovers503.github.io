@@ -799,3 +799,102 @@ footer {
         padding: 4rem 1.5rem;
     }
 }
+
+/* ==========================================================================
+   14. Custom 5-Level Curriculum Styles
+   ========================================================================== */
+.curriculum-container {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.curriculum-level {
+    display: flex;
+    align-items: center;
+    background-color: var(--pure-white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    gap: 2rem;
+    transition: var(--transition-smooth);
+}
+
+.curriculum-level:hover {
+    transform: translateX(5px);
+    border-color: var(--brand-blue);
+    box-shadow: 0 5px 15px rgba(45, 104, 196, 0.05);
+}
+
+.level-badge {
+    background-color: var(--brand-blue);
+    color: var(--pure-white);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    white-space: nowrap;
+    min-width: 100px;
+    text-align: center;
+}
+
+/* Alternate badge color for contrast */
+.curriculum-level:nth-child(even) .level-badge {
+    background-color: var(--brand-yellow);
+    color: var(--dark-charcoal);
+}
+
+.level-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--brand-blue);
+    margin-bottom: 0.5rem;
+}
+
+.level-info p {
+    color: var(--gray-muted);
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Curriculum Call to Action */
+.curriculum-cta {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    background-color: var(--light-cream);
+    border-radius: 8px;
+    border: 1px dashed var(--brand-blue);
+}
+
+.curriculum-cta h3 {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    color: var(--brand-blue);
+    margin-bottom: 0.5rem;
+}
+
+.curriculum-cta p {
+    color: var(--gray-muted);
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .curriculum-level {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .level-badge {
+        width: auto;
+        min-width: unset;
+    }
+}
